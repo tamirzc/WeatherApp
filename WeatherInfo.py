@@ -21,6 +21,7 @@ if __name__ == "__main__":
     if weatherInfo["cod"] != "404":
         print("City: " + weatherInfo["name"])
         print("Temperature: " + str(weatherInfo["main"]["temp"]))
+        print((weatherInfo["weather"][0]['description']))
     else:
         print("404: City not Found") 
     
